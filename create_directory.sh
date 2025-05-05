@@ -1,2 +1,3 @@
-# Cette commande permet crée un répertoire nommé test_directory 
+# Cette commande permet crée un répertoire nommé test_directory
+#!/bin/bash
 mkdir;
