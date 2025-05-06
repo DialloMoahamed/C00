@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Ce script vérifie si un fichier donné existe ou non.
 
 echo "Entrez le nom du fichier : "
