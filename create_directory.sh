@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Récupère le chemin absolu du dossier où se trouve le script
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Ce script crée un répertoire nommé test_directory
 
-# Crée test_directory dans le même dossier que le script
-mkdir -p "$SCRIPT_DIR/test_directory"
+dir_name="test_directory"
 
-echo "Dossier créé ici : $SCRIPT_DIR/test_directory"
+if [ -d "$dir_name" ]; then
+    echo "Le répertoire '$dir_name' existe déjà."
+else
+    mkdir "$dir_name"
+    echo "Le répertoire '$dir_name' a été créé avec succès."
+fi
