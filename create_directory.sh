@@ -2,11 +2,9 @@
 
 # Ce script crée un répertoire nommé test_directory
 
-dir_name="test_directory"
-
-if [ "$dir_name" ]; then
-    echo "Le répertoire '$dir_name' existe déjà."
+if [ "test_directory" ]; then
+    echo "Le répertoire test_directory existe déjà."
 else
-    mkdir $dir_name
-    echo "Le répertoire '$dir_name' a été créé avec succès."
+    mkdir test_directory
+    echo "Le répertoire test_directory a été créé avec succès."
 fi
