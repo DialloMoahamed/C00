@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Script pour créer un dossier, un fichier et y écrire quelque chose
+# Récupère le chemin absolu du dossier où se trouve le script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mkdir -p test_directory
-cd test_directory
-touch info.txt
-echo "Bienvenue dans le fichier créé par un script Bash !"
+# Crée test_directory dans le même dossier que le script
+mkdir -p "$SCRIPT_DIR/test_directory"
 
-echo "Fichier info.txt créé avec succès dans test_directory."
+echo "Dossier créé ici : $SCRIPT_DIR/test_directory"
