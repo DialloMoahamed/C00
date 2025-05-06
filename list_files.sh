@@ -1,3 +1,3 @@
 #!/bin/bash
 # Cette commande permet de lister tous les fichiers dans le répertoire courant 
-ls .
+ls
