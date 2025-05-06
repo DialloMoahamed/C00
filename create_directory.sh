@@ -4,7 +4,7 @@
 
 dir_name="test_directory"
 
-if [ -d "$dir_name" ]; then
+if [ "$dir_name" ]; then
     echo "Le répertoire '$dir_name' existe déjà."
 else
     mkdir $dir_name
