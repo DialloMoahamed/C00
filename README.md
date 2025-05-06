@@ -24,4 +24,4 @@ Ce dépôt contient une série d'exercices d'introduction à la ligne de command
 1. Cloner ce dépôt :
    ```bash
    git clone https://github.com/DialloMoahamed/C00.git
-   cd shell-exercices-C00
+
